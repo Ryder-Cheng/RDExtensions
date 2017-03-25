@@ -21,7 +21,6 @@
 		0D45539B1E85514700F967FA /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		0D48F71E1E840B990051DB13 /* RDExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D48F7211E840B990051DB13 /* RDExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDExtensions.h; sourceTree = "<group>"; };
-		0D48F7221E840B990051DB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +58,6 @@
 				0D4553961E85511100F967FA /* UIView+Extension.h */,
 				0D4553971E85511100F967FA /* UIView+Extension.m */,
 				0D48F7211E840B990051DB13 /* RDExtensions.h */,
-				0D48F7221E840B990051DB13 /* Info.plist */,
 			);
 			path = RDExtensions;
 			sourceTree = "<group>";
