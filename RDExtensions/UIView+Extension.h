@@ -21,7 +21,6 @@
 @property(nonatomic) CGFloat h;
 @property(nonatomic) CGFloat centerX;
 @property(nonatomic) CGFloat centerY;
-
 - (void)removeSubviews;
 
 @end

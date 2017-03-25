@@ -143,7 +143,7 @@
 
 
 
-#pragma mark - setter and getter CenterX
+#pragma mark - setter and getter CenterX && centerY
 
 -  (CGFloat)centerX {
     return CGRectGetMidX(self.frame);
@@ -153,6 +153,14 @@
     return CGRectGetMidY(self.frame);
 }
 
+- (void)setCenterX:(CGFloat)centerX {
+    self.center = CGPointMake(centerX, self.center.y);
+}
+
+- (void)setCenterY:(CGFloat)centerY {
+    self.center = CGPointMake(self.center.x, centerY);
+}
+
 #pragma mark - remove all subviews
 
 - (void)removeSubviews {
@@ -160,6 +168,4 @@
         [subview removeFromSuperview];
     }
 }
-
-
 @end
