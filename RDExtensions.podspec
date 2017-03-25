@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RDExtensions"
-  s.version      = "0.0.1"
-  s.summary      = "This is common extensions for objective-c"
+  s.version      = "0.0.2"
+  s.summary      = "objective-c common extensions"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  this is common extensions for objective-c
                    DESC
 
   s.homepage     = "https://github.com/Ryder-Cheng/RDExtensions"
@@ -52,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Ryder Cheng" => "chengyaojun@outlook.com" }
+  s.author             = { "Ryder-Cheng" => "chengyaojun@outlook.com" }
   # Or just: s.author    = "ChengYaojun"
   # s.authors            = { "ChengYaojun" => "chengyaojun@gmail.com" }
   # s.social_media_url   = "http://twitter.com/ChengYaojun"
@@ -91,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "RDExtensions/*"
-  s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -116,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
