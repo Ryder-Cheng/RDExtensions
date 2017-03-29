@@ -12,6 +12,8 @@
 		0D45539C1E85514700F967FA /* UIColor+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D45539A1E85514700F967FA /* UIColor+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D45539D1E85514700F967FA /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45539B1E85514700F967FA /* UIColor+Extension.m */; };
 		0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D48F7211E840B990051DB13 /* RDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4E61471E8BBDA700785EB9 /* BlockTap.h */; };
+		0D4E614A1E8BBDA700785EB9 /* BlockTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E61481E8BBDA700785EB9 /* BlockTap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		0D45539B1E85514700F967FA /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		0D48F71E1E840B990051DB13 /* RDExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D48F7211E840B990051DB13 /* RDExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDExtensions.h; sourceTree = "<group>"; };
+		0D4E61471E8BBDA700785EB9 /* BlockTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTap.h; sourceTree = "<group>"; };
+		0D4E61481E8BBDA700785EB9 /* BlockTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		0D48F7201E840B990051DB13 /* RDExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				0D4E61471E8BBDA700785EB9 /* BlockTap.h */,
+				0D4E61481E8BBDA700785EB9 /* BlockTap.m */,
 				0D45539A1E85514700F967FA /* UIColor+Extension.h */,
 				0D45539B1E85514700F967FA /* UIColor+Extension.m */,
 				0D4553961E85511100F967FA /* UIView+Extension.h */,
@@ -69,6 +75,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */,
 				0D4553981E85511100F967FA /* UIView+Extension.h in Headers */,
 				0D45539C1E85514700F967FA /* UIColor+Extension.h in Headers */,
 				0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */,
@@ -145,6 +152,7 @@
 			files = (
 				0D4553991E85511100F967FA /* UIView+Extension.m in Sources */,
 				0D45539D1E85514700F967FA /* UIColor+Extension.m in Sources */,
+				0D4E614A1E8BBDA700785EB9 /* BlockTap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

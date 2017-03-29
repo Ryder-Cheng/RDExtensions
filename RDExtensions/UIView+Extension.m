@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Extension.h"
+#import "BlockTap.h"
 
 @implementation UIView (Extension)
 
@@ -167,5 +168,28 @@
     for (UIView *subview in self.subviews) {
         [subview removeFromSuperview];
     }
+}
+
+#pragma mark -  UITapGestureRecognizer
+- (void)addTapGestureRecognizer:(NSInteger)tapCount target:(NSObject *)target action:(SEL)action {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:tap];
+}
+
+- (void)addTapGestureRecognizer:(NSInteger)tapCount action:(void (^)(UITapGestureRecognizer *))action {
+    BlockTap *tap = [[BlockTap alloc] init:tapCount
+                               fingerCount:1
+                                    action:action];
+    [self addGestureRecognizer:tap];
+    [self setUserInteractionEnabled:true];
+}
+
+
+- (void)addTarget:(NSObject *)target action:(SEL)action  {
+    [self addTapGestureRecognizer:1 target:target action:action];
+}
+
+- (void)addTapGestureRecognizer:(void (^)(UITapGestureRecognizer *))action {
+    [self addTapGestureRecognizer:1 action:action];
 }
 @end

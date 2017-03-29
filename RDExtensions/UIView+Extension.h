@@ -22,5 +22,9 @@
 @property(nonatomic) CGFloat centerX;
 @property(nonatomic) CGFloat centerY;
 - (void)removeSubviews;
+- (void)addTarget:(id)target action:(SEL)action;
+- (void)addTapGestureRecognizer:(void (^)(UITapGestureRecognizer *))action;
+- (void)addTapGestureRecognizer:(NSInteger)tapCount target:(id)target action:(SEL)action;
+- (void)addTapGestureRecognizer:(NSInteger)tapCount action:(void (^)(UITapGestureRecognizer *))action;
 
 @end
