@@ -19,6 +19,10 @@ typedef void (^BlockTapAction)(UITapGestureRecognizer *);
 
 @implementation BlockTap
 
+- (instancetype)initWithTarget:(id)target action:(SEL)action {
+    return [super initWithTarget:target action:action];
+}
+
 - (instancetype)init:(NSInteger)tapCount fingerCount:(NSInteger)fingerCount action:(void (^)(UITapGestureRecognizer *))action
 {
     self = [super init];

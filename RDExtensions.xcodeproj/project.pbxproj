@@ -14,6 +14,14 @@
 		0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D48F7211E840B990051DB13 /* RDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4E61471E8BBDA700785EB9 /* BlockTap.h */; };
 		0D4E614A1E8BBDA700785EB9 /* BlockTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E61481E8BBDA700785EB9 /* BlockTap.m */; };
+		0DF68AB11E8D50F100367DCE /* BlockLongPress.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AAF1E8D50F100367DCE /* BlockLongPress.h */; };
+		0DF68AB21E8D50F100367DCE /* BlockLongPress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68AB01E8D50F100367DCE /* BlockLongPress.m */; };
+		0DF68AB51E8D550900367DCE /* BlockPinch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AB31E8D550900367DCE /* BlockPinch.h */; };
+		0DF68AB61E8D550900367DCE /* BlockPinch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68AB41E8D550900367DCE /* BlockPinch.m */; };
+		0DF68AB91E8D571900367DCE /* BlockSwipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AB71E8D571900367DCE /* BlockSwipe.h */; };
+		0DF68ABA1E8D571900367DCE /* BlockSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68AB81E8D571900367DCE /* BlockSwipe.m */; };
+		0DF68ABD1E8D58D100367DCE /* BlockPan.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68ABB1E8D58D100367DCE /* BlockPan.h */; };
+		0DF68ABE1E8D58D100367DCE /* BlockPan.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68ABC1E8D58D100367DCE /* BlockPan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +33,14 @@
 		0D48F7211E840B990051DB13 /* RDExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDExtensions.h; sourceTree = "<group>"; };
 		0D4E61471E8BBDA700785EB9 /* BlockTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTap.h; sourceTree = "<group>"; };
 		0D4E61481E8BBDA700785EB9 /* BlockTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTap.m; sourceTree = "<group>"; };
+		0DF68AAF1E8D50F100367DCE /* BlockLongPress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLongPress.h; sourceTree = "<group>"; };
+		0DF68AB01E8D50F100367DCE /* BlockLongPress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLongPress.m; sourceTree = "<group>"; };
+		0DF68AB31E8D550900367DCE /* BlockPinch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockPinch.h; sourceTree = "<group>"; };
+		0DF68AB41E8D550900367DCE /* BlockPinch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockPinch.m; sourceTree = "<group>"; };
+		0DF68AB71E8D571900367DCE /* BlockSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSwipe.h; sourceTree = "<group>"; };
+		0DF68AB81E8D571900367DCE /* BlockSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockSwipe.m; sourceTree = "<group>"; };
+		0DF68ABB1E8D58D100367DCE /* BlockPan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockPan.h; sourceTree = "<group>"; };
+		0DF68ABC1E8D58D100367DCE /* BlockPan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockPan.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,14 @@
 			children = (
 				0D4E61471E8BBDA700785EB9 /* BlockTap.h */,
 				0D4E61481E8BBDA700785EB9 /* BlockTap.m */,
+				0DF68AAF1E8D50F100367DCE /* BlockLongPress.h */,
+				0DF68AB01E8D50F100367DCE /* BlockLongPress.m */,
+				0DF68AB31E8D550900367DCE /* BlockPinch.h */,
+				0DF68AB41E8D550900367DCE /* BlockPinch.m */,
+				0DF68AB71E8D571900367DCE /* BlockSwipe.h */,
+				0DF68AB81E8D571900367DCE /* BlockSwipe.m */,
+				0DF68ABB1E8D58D100367DCE /* BlockPan.h */,
+				0DF68ABC1E8D58D100367DCE /* BlockPan.m */,
 				0D45539A1E85514700F967FA /* UIColor+Extension.h */,
 				0D45539B1E85514700F967FA /* UIColor+Extension.m */,
 				0D4553961E85511100F967FA /* UIView+Extension.h */,
@@ -75,8 +99,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF68AB91E8D571900367DCE /* BlockSwipe.h in Headers */,
 				0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */,
+				0DF68ABD1E8D58D100367DCE /* BlockPan.h in Headers */,
 				0D4553981E85511100F967FA /* UIView+Extension.h in Headers */,
+				0DF68AB11E8D50F100367DCE /* BlockLongPress.h in Headers */,
+				0DF68AB51E8D550900367DCE /* BlockPinch.h in Headers */,
 				0D45539C1E85514700F967FA /* UIColor+Extension.h in Headers */,
 				0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */,
 			);
@@ -151,8 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4553991E85511100F967FA /* UIView+Extension.m in Sources */,
+				0DF68AB61E8D550900367DCE /* BlockPinch.m in Sources */,
+				0DF68ABE1E8D58D100367DCE /* BlockPan.m in Sources */,
+				0DF68ABA1E8D571900367DCE /* BlockSwipe.m in Sources */,
 				0D45539D1E85514700F967FA /* UIColor+Extension.m in Sources */,
 				0D4E614A1E8BBDA700785EB9 /* BlockTap.m in Sources */,
+				0DF68AB21E8D50F100367DCE /* BlockLongPress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

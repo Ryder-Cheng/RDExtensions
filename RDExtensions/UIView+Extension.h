@@ -8,7 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Extension)
+@protocol UIViewGestureRecognizerDelegate <NSObject>
+
+- (void)addTap:(id)target action:(SEL)action;
+- (void)addTapGestureRecognizer:(void (^)(UITapGestureRecognizer *))action;
+- (void)addTapGestureRecognizer:(NSInteger)tapCount target:(id)target action:(SEL)action;
+- (void)addTapGestureRecognizer:(NSInteger)tapCount action:(void (^)(UITapGestureRecognizer *))action;
+
+- (void)addLongPressed:(id)target action:(SEL)action;
+- (void)addLongPressedGestureRecognizer:(void (^)(UILongPressGestureRecognizer *))action;
+
+- (void)addPinch:(id)target action:(SEL)action;
+- (void)addPinchGestureRecognizer:(void (^)(UIPinchGestureRecognizer *))action;
+
+- (void)addSwipe:(id)target action:(SEL)action;
+- (void)addSwipeGestureRecognizer:(void (^)(UISwipeGestureRecognizer *))action;
+
+- (void)addPan:(id)target action:(SEL)action;
+- (void)addPanGestureRecognizer:(void (^)(UIPanGestureRecognizer *))action;
+
+@end
+
+@interface UIView (Extension)<UIViewGestureRecognizerDelegate>
 @property(nonatomic) CGFloat left;
 @property(nonatomic) CGFloat right;
 @property(nonatomic) CGFloat top;
@@ -22,9 +43,8 @@
 @property(nonatomic) CGFloat centerX;
 @property(nonatomic) CGFloat centerY;
 - (void)removeSubviews;
-- (void)addTarget:(id)target action:(SEL)action;
-- (void)addTapGestureRecognizer:(void (^)(UITapGestureRecognizer *))action;
-- (void)addTapGestureRecognizer:(NSInteger)tapCount target:(id)target action:(SEL)action;
-- (void)addTapGestureRecognizer:(NSInteger)tapCount action:(void (^)(UITapGestureRecognizer *))action;
+- (void)addViews:(NSArray *)array;
 
 @end
+
+
