@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^BlockPanAction)(UIPanGestureRecognizer *);
+
 @interface BlockPan : UITapGestureRecognizer
 
 - (instancetype)init:(BlockPanAction)action;

@@ -8,7 +8,7 @@
 
 #import "BlockPan.h"
 
-typedef void (^BlockPanAction)(UIPanGestureRecognizer *);
+
 
 @interface BlockPan ()
 

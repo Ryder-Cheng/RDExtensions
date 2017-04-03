@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface BlockPinch : UIPinchGestureRecognizer
 
 - (instancetype)init:(void (^)(UIPinchGestureRecognizer *))action ;
