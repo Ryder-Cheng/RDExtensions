@@ -142,12 +142,13 @@
     return self.center.x;
 }
 
-- (CGFloat)centerY {
-    return self.center.y;
-}
-
 - (void)setCenterX:(CGFloat)centerX {
     self.center = CGPointMake(centerX, self.center.y);
+}
+
+
+- (CGFloat)centerY {
+    return self.center.y;
 }
 
 - (void)setCenterY:(CGFloat)centerY {

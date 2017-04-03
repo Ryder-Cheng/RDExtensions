@@ -55,8 +55,10 @@
 @property(nonatomic) CGFloat y;
 @property(nonatomic) CGFloat w;
 @property(nonatomic) CGFloat h;
-@property(nonatomic) CGFloat centerX;
-@property(nonatomic) CGFloat centerY;
+-  (CGFloat)centerX;
+- (void)setCenterX:(CGFloat)centerX;
+- (CGFloat)centerY;
+- (void)setCenterY:(CGFloat)centerY;
 - (CGFloat (^)(CGFloat))cornerRadius;
 - (UIEdgeInsets (^)(UIEdgeInsets))edges;
 - (CGPoint (^)(CGPoint))offset;
