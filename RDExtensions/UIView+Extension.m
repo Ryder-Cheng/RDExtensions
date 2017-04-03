@@ -14,6 +14,23 @@
 #import "BlockPan.h"
 
 @implementation UIView (Extension)
+#pragma mark -
+
+#pragma mark - to image
+
+- (UIImage *)toImage {
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, 0.0);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:false];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+@end
+
+
+@implementation UIView (Geometry)
+
 
 #pragma mark - setter and getter X coord
 
@@ -166,6 +183,57 @@
     self.center = CGPointMake(self.center.x, centerY);
 }
 
+- (UIEdgeInsets (^)(UIEdgeInsets))edges {
+    return ^UIEdgeInsets(UIEdgeInsets inset) {
+        CGRect frame = self.frame;
+        frame.size.width = frame.size.width + inset.left + inset.right;
+        frame.size.height = frame.size.height + inset.top + inset.bottom;
+        frame.origin.x = frame.origin.x - inset.left;
+        frame.origin.y = frame.origin.y - inset.top;
+        self.frame = frame;
+        return inset;
+    };
+}
+
+- (CGPoint (^)(CGPoint))offset {
+    return ^CGPoint(CGPoint point) {
+        CGRect frame = self.frame;
+        frame.origin.x = frame.origin.x + point.x;
+        frame.origin.y = frame.origin.y + point.y;
+        self.frame = frame;
+        return point;
+    };
+}
+
+- (CGFloat (^)(CGFloat))offsetX {
+    return ^CGFloat(CGFloat x) {
+        CGRect frame = self.frame;
+        frame.origin.x = frame.origin.x + x;
+        self.frame = frame;
+        return x;
+    };
+}
+
+- (CGFloat (^)(CGFloat))offsetY {
+    return ^CGFloat(CGFloat y) {
+        CGRect frame = self.frame;
+        frame.origin.y = frame.origin.y + y;
+        self.frame = frame;
+        return y;
+    };
+}
+
+- (CGFloat (^)(CGFloat))cornerRadius {
+    return ^CGFloat(CGFloat cornerRadius) {
+        self.layer.cornerRadius = cornerRadius;
+        return cornerRadius;
+    };
+}
+
+@end
+
+@implementation UIView (Hierarchy)
+
 #pragma mark - remove all subviews
 
 - (void)removeSubviews {
@@ -180,6 +248,10 @@
     }
 }
 
+
+@end
+
+@implementation UIView (GestureRecognizer)
 
 #pragma mark - UIViewGestureRecognizerDelegate's Tap/LongPress/Pinch/Swipe/Pan
 #pragma mark UITapGestureRecognizer
@@ -262,15 +334,48 @@
     [self setUserInteractionEnabled:true];
 }
 
-#pragma mark -
+@end
 
-#pragma mark - to image
 
-- (UIImage *)toImage {
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, 0.0);
-    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:false];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
+@implementation UIView (Layer)
+
+- (void)addBorder:(CGFloat)size withColor:(UIColor *)borderColor {
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.borderWidth = size;
+    self.layer.masksToBounds = true;
 }
+
+- (void)addBorderLeft:(CGFloat)size withColor:(UIColor *)borderColor {
+    CALayer *leftBoderLayer = [[CALayer alloc] init];
+    CGRect frame = CGRectMake(0, 0, size, CGRectGetHeight(self.frame));
+    leftBoderLayer.frame = frame;
+    leftBoderLayer.backgroundColor = borderColor.CGColor;
+    [self.layer addSublayer:leftBoderLayer];
+}
+
+- (void)addBorderRight:(CGFloat)size withColor:(UIColor *)borderColor {
+    CALayer *rightBoderLayer = [[CALayer alloc] init];
+    CGRect frame = CGRectMake(CGRectGetWidth(self.frame), 0, size, CGRectGetHeight(self.frame));
+    rightBoderLayer.frame = frame;
+    rightBoderLayer.backgroundColor = borderColor.CGColor;
+    [self.layer addSublayer:rightBoderLayer];
+}
+
+- (void)addBorderTop:(CGFloat)size withColor:(UIColor *)borderColor {
+    CALayer *topBorderLayer = [[CALayer alloc] init];
+    CGRect frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), size);
+    topBorderLayer.frame = frame;
+    topBorderLayer.backgroundColor = borderColor.CGColor;
+    [self.layer addSublayer:topBorderLayer];
+}
+
+- (void)addBorderBottom:(CGFloat)size withColor:(UIColor *)borderColor {
+    CALayer *bottomBorderLayer = [[CALayer alloc] init];
+    CGRect frame = CGRectMake(0, CGRectGetHeight(self.frame), CGRectGetWidth(self.frame), size);
+    bottomBorderLayer.frame = frame;
+    bottomBorderLayer.backgroundColor = borderColor.CGColor;
+    [self.layer addSublayer:bottomBorderLayer];
+}
+
+
 @end
