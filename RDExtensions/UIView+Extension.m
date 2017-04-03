@@ -14,9 +14,6 @@
 #import "BlockPan.h"
 
 @implementation UIView (Extension)
-#pragma mark -
-
-#pragma mark - to image
 
 - (UIImage *)toImage {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, 0.0);
@@ -31,9 +28,6 @@
 
 @implementation UIView (Geometry)
 
-
-#pragma mark - setter and getter X coord
-
 - (CGFloat)x {
     return CGRectGetMinX(self.frame);
 }
@@ -44,8 +38,6 @@
                               CGRectGetWidth(self.frame),
                               CGRectGetHeight(self.frame))];
 }
-
-#pragma mark - setter and getter Y coord
 
 - (CGFloat)y {
     return CGRectGetMinY(self.frame);
@@ -58,8 +50,6 @@
                               CGRectGetHeight(self.frame))];
 }
 
-#pragma mark - setter and getter Width
-
 - (CGFloat)w {
     return CGRectGetWidth(self.frame);
 }
@@ -70,8 +60,6 @@
                               w,
                               CGRectGetHeight(self.frame))];
 }
-
-#pragma mark - setter and getter Height
 
 - (CGFloat)h {
     return CGRectGetHeight(self.frame);
@@ -84,8 +72,6 @@
                               h)];
 }
 
-#pragma mark - setter and getter Left
-
 - (CGFloat)left {
     return CGRectGetMinX(self.frame);
 }
@@ -96,8 +82,6 @@
                               CGRectGetWidth(self.frame),
                               CGRectGetHeight(self.frame))];
 }
-
-#pragma mark - setter and getter Right
 
 - (CGFloat)right {
     return CGRectGetMinX(self.frame) + CGRectGetWidth(self.frame);
@@ -110,8 +94,6 @@
                               CGRectGetHeight(self.frame))];
 }
 
-#pragma mark - setter and getter Top
-
 - (CGFloat)top {
     return CGRectGetMinY(self.frame);
 }
@@ -122,9 +104,6 @@
                               CGRectGetWidth(self.frame),
                               CGRectGetHeight(self.frame))];
 }
-
-
-#pragma mark - setter and getter Bottom
 
 - (CGFloat)bottom {
     return CGRectGetMinY(self.frame) + CGRectGetHeight(self.frame);
@@ -137,8 +116,6 @@
                               bottom - CGRectGetMinY(self.frame))];
 }
 
-#pragma mark - setter and getter Position
-
 - (CGPoint)origin {
     return self.frame.origin;
 }
@@ -149,8 +126,6 @@
                               CGRectGetWidth(self.frame),
                               CGRectGetHeight(self.frame))];
 }
-
-#pragma mark - setter and getter Size
 
 - (CGSize)size {
     return self.frame.size;
@@ -163,16 +138,12 @@
                               size.height)];
 }
 
-
-
-#pragma mark - setter and getter CenterX && centerY
-
 -  (CGFloat)centerX {
-    return CGRectGetMidX(self.frame);
+    return self.center.x;
 }
 
 - (CGFloat)centerY {
-    return CGRectGetMidY(self.frame);
+    return self.center.y;
 }
 
 - (void)setCenterX:(CGFloat)centerX {
@@ -233,9 +204,6 @@
 @end
 
 @implementation UIView (Hierarchy)
-
-#pragma mark - remove all subviews
-
 - (void)removeSubviews {
     for (UIView *subview in self.subviews) {
         [subview removeFromSuperview];
@@ -252,9 +220,6 @@
 @end
 
 @implementation UIView (GestureRecognizer)
-
-#pragma mark - UIViewGestureRecognizerDelegate's Tap/LongPress/Pinch/Swipe/Pan
-#pragma mark UITapGestureRecognizer
 - (void)addTapGestureRecognizer:(NSInteger)tapCount target:(NSObject *)target action:(SEL)action {
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
     [self addGestureRecognizer:tap];
@@ -277,8 +242,6 @@
     [self addTapGestureRecognizer:1 action:action];
 }
 
-#pragma mark UILongPressGestureRecognizer
-
 - (void)addLongPressed:(id)target action:(SEL)action {
     BlockLongPress *longPressed = [[BlockLongPress alloc] initWithTarget:self action:action];
     [self addGestureRecognizer:longPressed];
@@ -290,8 +253,6 @@
     [self addGestureRecognizer:longPressed];
     [self setUserInteractionEnabled:true];
 }
-
-#pragma mark UIPinchGestureRecognizer
 
 - (void)addPinch:(id)target action:(SEL)action {
     BlockPinch *pinch = [[BlockPinch alloc] initWithTarget:target action:action];
@@ -305,8 +266,6 @@
     [self setUserInteractionEnabled:true];
 }
 
-#pragma mark UISwipeGestureRecognizer
-
 - (void)addSwipe:(id)target action:(SEL)action {
     BlockSwipe *swipe = [[BlockSwipe alloc] initWithTarget:target action:action];
     [self addGestureRecognizer:swipe];
@@ -318,9 +277,6 @@
     [self addGestureRecognizer:swipe];
     [self setUserInteractionEnabled:true];
 }
-
-#pragma mark UIPanGestureRecognizer
-
 
 - (void)addPan:(id)target action:(SEL)action {
     BlockPan *pan = [[BlockPan alloc] initWithTarget:target action:action];
