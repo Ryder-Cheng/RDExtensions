@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^AnimationBlock)(void);
+typedef void (^CompletionBlock)(BOOL);
+
 @interface UIView (GestureRecognizer)
 - (void)addTap:(id)target action:(SEL)action;
 - (void)addTapGestureRecognizer:(void (^)(UITapGestureRecognizer *))action;
@@ -112,6 +115,11 @@
 - (void)addKeyframeWithRelativeStartTime:(double)startTime
                         relativeDuration:(double)durantion
                                animation:(void (^)(void))animations;
+
+- (void (^)(NSTimeInterval, NSTimeInterval,AnimationBlock))keyframeWithDelay;
+- (void (^)(NSTimeInterval,AnimationBlock))keyframe;
+- (void (^)(double, double, AnimationBlock))addKeyframeWithRelativeStartTime;
+- (void (^)(NSTimeInterval, NSTimeInterval,AnimationBlock,CompletionBlock))keyframeWithCompletion;
 
 - (void)pop;
 - (void)push;

@@ -527,4 +527,52 @@
                                   }];
 }
 
+- (void (^)(NSTimeInterval, NSTimeInterval,AnimationBlock))keyframeWithDelay {
+    return ^void(NSTimeInterval duration, NSTimeInterval delay, AnimationBlock animations) {
+        [UIView animateKeyframesWithDuration:duration
+                                       delay:delay
+                                     options:UIViewKeyframeAnimationOptionCalculationModeLinear
+                                  animations:^{
+                                      animations();
+                                  } completion:nil];
+    };
+}
+
+- (void (^)(NSTimeInterval,AnimationBlock))keyframe {
+    return ^void(NSTimeInterval duration, AnimationBlock animations) {
+        [UIView animateKeyframesWithDuration:duration
+                                       delay:0
+                                     options:UIViewKeyframeAnimationOptionCalculationModeLinear
+                                  animations:^{
+                                      animations();
+                                  } completion:nil];
+    };
+}
+
+- (void (^)(double, double, AnimationBlock))addKeyframeWithRelativeStartTime {
+    return ^void(double startTime, double relativeDuration, AnimationBlock animations){
+        [UIView addKeyframeWithRelativeStartTime:startTime
+                                relativeDuration:relativeDuration
+                                      animations:^{
+                                          animations();
+                                      }];
+    };
+}
+
+- (void (^)(NSTimeInterval, NSTimeInterval, AnimationBlock, CompletionBlock))keyframeWithCompletion {
+    return ^void(NSTimeInterval duration, NSTimeInterval delay, AnimationBlock animations, CompletionBlock completion) {
+        [UIView animateKeyframesWithDuration:duration
+                                       delay:delay
+                                     options:UIViewKeyframeAnimationOptionCalculationModeLinear
+                                  animations:^{
+                                      animations();
+                                  }
+                                  completion:^(BOOL finished) {
+                                      if (completion) {
+                                          completion(finished);
+                                      }
+                                  }];
+    };
+}
+
 @end
