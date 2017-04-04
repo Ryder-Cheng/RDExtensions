@@ -336,3 +336,135 @@
 
 
 @end
+
+@implementation UIView (animation)
+
+- (void)spring:(NSTimeInterval)duration animation:(void (^)(void))animations {
+    [UIView animateWithDuration:duration
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionAllowAnimatedContent
+                     animations:^{
+                         animations();
+                     }
+                     completion:nil];
+}
+
+- (void)springEaseIn:(NSTimeInterval)duration animation:(void (^)(void))animations{
+    [UIView animateWithDuration:duration
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         animations();
+                     }
+                     completion:nil];
+};
+
+- (void)springEaseOut:(NSTimeInterval)duration animation:(void (^)(void))animations{
+    [UIView animateWithDuration:duration
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         animations();
+                     }
+                     completion:nil];
+};
+
+- (void)springEaseInOut:(NSTimeInterval)duration animation:(void (^)(void))animations{
+    [UIView animateWithDuration:duration
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         animations();
+                     }
+                     completion:nil];
+};
+
+- (void)springLinear:(NSTimeInterval)duration animation:(void (^)(void))animations{
+    [UIView animateWithDuration:duration
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         animations();
+                     }
+                     completion:nil];
+};
+
+- (void)springWithDelay:(NSTimeInterval)duration delay:(NSTimeInterval)delay animation:(void (^)(void))animations{
+    [UIView animateWithDuration:duration
+                          delay:delay
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionAllowAnimatedContent
+                     animations:^{
+                         animations();
+                     }
+                     completion:nil];
+};
+
+- (void)springWithCompletion:(NSTimeInterval)duration animation:(void (^)(void))animations completion:(void (^)(BOOL))completion{
+    [UIView animateWithDuration:duration
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionAllowAnimatedContent
+                     animations:^{
+                         animations();
+                     }
+                     completion:^(BOOL finished) {
+                         completion(finished);
+                     }];
+};
+
+- (void)pop {
+    self.transform = CGAffineTransformMakeScale(1.1, 1.1);
+    [self spring:0.25 animation:^{
+        self.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    }];
+}
+
+- (void)push{
+    self.transform = CGAffineTransformMakeScale(0.9, 0.9);
+    [self spring:0.25 animation:^{
+        self.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    }];
+}
+
+- (void)popleft {
+    self.transform = CGAffineTransformMakeTranslation(-CGRectGetMinX(self.frame), 0);
+    [self spring:0.5 animation:^{
+        self.transform = CGAffineTransformMakeTranslation(CGRectGetMinX(self.frame), 0);
+    }];
+}
+
+- (void)popright {
+    self.transform = CGAffineTransformMakeTranslation(CGRectGetWidth([UIScreen mainScreen].bounds), 0);
+    [self spring:0.5 animation:^{
+        self.transform = CGAffineTransformMakeTranslation(0, 0);
+    }];
+}
+
+- (void)popup {
+    self.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight([UIScreen mainScreen].bounds));
+    [self spring:0.5 animation:^{
+        self.transform = CGAffineTransformMakeTranslation(0, 0);
+    }];
+}
+
+- (void)popdown {
+    self.transform = CGAffineTransformMakeTranslation(0, -CGRectGetMinY(self.frame));
+    [self spring:0.5 animation:^{
+        self.transform = CGAffineTransformMakeTranslation(0, CGRectGetMinY(self.frame));
+    }];
+}
+
+@end
