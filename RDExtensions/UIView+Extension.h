@@ -74,13 +74,45 @@
 
 @interface UIView (animation)
 
-- (void)spring:(NSTimeInterval)duration animation:(void (^)(void))animations;
-- (void)springEaseIn:(NSTimeInterval)duration animation:(void (^)(void))animations;
-- (void)springEaseOut:(NSTimeInterval)duration animation:(void (^)(void))animations;
-- (void)springEaseInOut:(NSTimeInterval)duration animation:(void (^)(void))animations;
-- (void)springLinear:(NSTimeInterval)duration animation:(void (^)(void))animations;
-- (void)springWithDelay:(NSTimeInterval)duration delay:(NSTimeInterval)delay animation:(void (^)(void))animations;
-- (void)springWithCompletion:(NSTimeInterval)duration animation:(void (^)(void))animations completion:(void (^)(BOOL))completion;
+- (void)spring:(NSTimeInterval)duration
+     animation:(void (^)(void))animations;
+
+- (void)springEaseIn:(NSTimeInterval)duration
+           animation:(void (^)(void))animations;
+
+- (void)springEaseOut:(NSTimeInterval)duration
+            animation:(void (^)(void))animations;
+
+- (void)springEaseInOut:(NSTimeInterval)duration
+              animation:(void (^)(void))animations;
+
+- (void)springLinear:(NSTimeInterval)duration
+           animation:(void (^)(void))animations;
+
+- (void)springWithDelay:(NSTimeInterval)duration
+                  delay:(NSTimeInterval)delay
+              animation:(void (^)(void))animations;
+
+- (void)springWithCompletion:(NSTimeInterval)duration
+                   animation:(void (^)(void))animations
+                  completion:(void (^)(BOOL))completion;
+
+- (void)keyframe:(NSTimeInterval)duration
+       animation:(void (^)(void))animations;
+
+- (void)keyframeWithDelay:(NSTimeInterval)duration
+                    delay:(NSTimeInterval)delay
+                animation:(void (^)(void))animations;
+
+- (void)keyframeWithCompletion:(NSTimeInterval)duration
+                         delay:(NSTimeInterval)delay
+                     animation:(void (^)(void))animations
+                    completion:(void (^)(BOOL))completion;
+
+- (void)addKeyframeWithRelativeStartTime:(double)startTime
+                        relativeDuration:(double)durantion
+                               animation:(void (^)(void))animations;
+
 - (void)pop;
 - (void)push;
 - (void)popleft;

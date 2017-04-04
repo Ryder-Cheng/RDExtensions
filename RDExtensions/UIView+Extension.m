@@ -339,7 +339,8 @@
 
 @implementation UIView (animation)
 
-- (void)spring:(NSTimeInterval)duration animation:(void (^)(void))animations {
+- (void)spring:(NSTimeInterval)duration
+     animation:(void (^)(void))animations {
     [UIView animateWithDuration:duration
                           delay:0
          usingSpringWithDamping:0.5
@@ -351,7 +352,8 @@
                      completion:nil];
 }
 
-- (void)springEaseIn:(NSTimeInterval)duration animation:(void (^)(void))animations{
+- (void)springEaseIn:(NSTimeInterval)duration
+           animation:(void (^)(void))animations{
     [UIView animateWithDuration:duration
                           delay:0
          usingSpringWithDamping:0.5
@@ -363,7 +365,8 @@
                      completion:nil];
 };
 
-- (void)springEaseOut:(NSTimeInterval)duration animation:(void (^)(void))animations{
+- (void)springEaseOut:(NSTimeInterval)duration
+            animation:(void (^)(void))animations{
     [UIView animateWithDuration:duration
                           delay:0
          usingSpringWithDamping:0.5
@@ -375,7 +378,8 @@
                      completion:nil];
 };
 
-- (void)springEaseInOut:(NSTimeInterval)duration animation:(void (^)(void))animations{
+- (void)springEaseInOut:(NSTimeInterval)duration
+              animation:(void (^)(void))animations{
     [UIView animateWithDuration:duration
                           delay:0
          usingSpringWithDamping:0.5
@@ -387,7 +391,8 @@
                      completion:nil];
 };
 
-- (void)springLinear:(NSTimeInterval)duration animation:(void (^)(void))animations{
+- (void)springLinear:(NSTimeInterval)duration
+           animation:(void (^)(void))animations{
     [UIView animateWithDuration:duration
                           delay:0
          usingSpringWithDamping:0.5
@@ -399,7 +404,9 @@
                      completion:nil];
 };
 
-- (void)springWithDelay:(NSTimeInterval)duration delay:(NSTimeInterval)delay animation:(void (^)(void))animations{
+- (void)springWithDelay:(NSTimeInterval)duration
+                  delay:(NSTimeInterval)delay
+              animation:(void (^)(void))animations{
     [UIView animateWithDuration:duration
                           delay:delay
          usingSpringWithDamping:0.5
@@ -411,7 +418,9 @@
                      completion:nil];
 };
 
-- (void)springWithCompletion:(NSTimeInterval)duration animation:(void (^)(void))animations completion:(void (^)(BOOL))completion{
+- (void)springWithCompletion:(NSTimeInterval)duration
+                   animation:(void (^)(void))animations
+                  completion:(void (^)(BOOL))completion{
     [UIView animateWithDuration:duration
                           delay:0
          usingSpringWithDamping:0.5
@@ -421,7 +430,9 @@
                          animations();
                      }
                      completion:^(BOOL finished) {
-                         completion(finished);
+                         if (completion) {
+                             completion(finished);
+                         }
                      }];
 };
 
@@ -465,6 +476,55 @@
     [self spring:0.5 animation:^{
         self.transform = CGAffineTransformMakeTranslation(0, CGRectGetMinY(self.frame));
     }];
+}
+
+- (void)keyframe:(NSTimeInterval)duration
+       animation:(void (^)(void))animations {
+    [UIView animateKeyframesWithDuration:duration
+                                   delay:0
+                                 options:UIViewKeyframeAnimationOptionCalculationModeLinear
+                              animations:^{
+                                  animations();
+                              } completion:nil];
+}
+
+- (void)keyframeWithDelay:(NSTimeInterval)duration
+                    delay:(NSTimeInterval)delay
+                animation:(void (^)(void))animations {
+    [UIView animateKeyframesWithDuration:duration
+                                   delay:delay
+                                 options:UIViewKeyframeAnimationOptionCalculationModeLinear
+                              animations:^{
+                                  animations();
+                              } completion:nil];
+}
+
+- (void)keyframeWithCompletion:(NSTimeInterval)duration
+                         delay:(NSTimeInterval)delay
+                     animation:(void (^ )(void))animations
+                    completion:(void (^)(BOOL))completion {
+    [UIView animateKeyframesWithDuration:duration
+                                   delay:delay
+                                 options:UIViewKeyframeAnimationOptionCalculationModeLinear
+                              animations:^{
+                                  animations();
+                              }
+                              completion:^(BOOL finished) {
+                                  if (completion) {
+                                      completion(finished);
+                                  }
+                                  
+                              }];
+}
+
+- (void)addKeyframeWithRelativeStartTime:(double)startTime
+                        relativeDuration:(double)durantion
+                               animation:(void (^)(void))animations {
+    [UIView addKeyframeWithRelativeStartTime:startTime
+                            relativeDuration:durantion
+                                  animations:^{
+                                      animations();
+                                  }];
 }
 
 @end
