@@ -17,8 +17,8 @@ FOUNDATION_EXPORT const unsigned char RDExtensionsVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <RDExtensions/PublicHeader.h>
 #import <RDExtensions/UIColor+Extension.h>
 #import <RDExtensions/UIView+Extension.h>
-#import <RDExtensions/NSObject+Extension.h>
-#import <RDExtensions/NSString+Extension.h>
+#import <RDExtensions/NSObject+Extensions.h>
+#import <RDExtensions/NSString+Extensions.h>
 #import <RDExtensions/UIImage+Extensions.h>
 #import <RDExtensions/NSNumber+Extensions.h>
 #import <RDExtensions/NSObject+Extensions.h>
