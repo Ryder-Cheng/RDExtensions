@@ -95,12 +95,6 @@
 		0D48F7201E840B990051DB13 /* RDExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				0D810E5F1EB0955B004B6A25 /* NSObject+Extensions.h */,
-				0D810E601EB0955B004B6A25 /* NSObject+Extensions.m */,
-				0D810E611EB0955B004B6A25 /* NSString+Extensions.h */,
-				0D810E621EB0955B004B6A25 /* NSString+Extensions.m */,
-				0D810E631EB0955B004B6A25 /* UIButton+Extensions.h */,
-				0D810E641EB0955B004B6A25 /* UIButton+Extensions.m */,
 				0DD9D5461E92A362002BB2E1 /* Info.plist */,
 				0D4E61471E8BBDA700785EB9 /* BlockTap.h */,
 				0D4E61481E8BBDA700785EB9 /* BlockTap.m */,
@@ -118,9 +112,15 @@
 				0D810E6C1EB09642004B6A25 /* UIImage+Extensions.m */,
 				0D4553961E85511100F967FA /* UIView+Extension.h */,
 				0D4553971E85511100F967FA /* UIView+Extension.m */,
-				0D48F7211E840B990051DB13 /* RDExtensions.h */,
 				0D810E6F1EB096B3004B6A25 /* NSNumber+Extensions.h */,
 				0D810E701EB096B3004B6A25 /* NSNumber+Extensions.m */,
+				0D810E5F1EB0955B004B6A25 /* NSObject+Extensions.h */,
+				0D810E601EB0955B004B6A25 /* NSObject+Extensions.m */,
+				0D810E611EB0955B004B6A25 /* NSString+Extensions.h */,
+				0D810E621EB0955B004B6A25 /* NSString+Extensions.m */,
+				0D810E631EB0955B004B6A25 /* UIButton+Extensions.h */,
+				0D810E641EB0955B004B6A25 /* UIButton+Extensions.m */,
+				0D48F7211E840B990051DB13 /* RDExtensions.h */,
 			);
 			path = RDExtensions;
 			sourceTree = "<group>";
