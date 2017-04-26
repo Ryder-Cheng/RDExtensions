@@ -1,6 +1,6 @@
 //
 //  NSObject+Extensions.m
-//  Test
+//  RDExtensions
 //
 //  Created by ChengYaojun on 2017/4/8.
 //  Copyright © 2017年 ChengYaojun. All rights reserved.
@@ -10,11 +10,6 @@
 
 @implementation NSObject (Extensions)
 
-@end
-
-
-@implementation NSObject (ConsoleLog)
-
 void print(id firstObject, ...) {
     va_list args;
     va_start(args, firstObject);
@@ -23,7 +18,18 @@ void print(id firstObject, ...) {
         [array addObject:eachObject];
     }
     va_end(args);
-    NSLog(@"%@", array);
+    for (id object in array) {
+        NSLog(@"%@", object);
+    }
+}
+
++ (NSString *)className {
+    return NSStringFromClass(self.class);
+}
+
+- (NSString *)classNameForProperty {
+    return NSStringFromClass(self.class);
 }
 
 @end
+

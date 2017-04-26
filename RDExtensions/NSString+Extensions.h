@@ -1,6 +1,6 @@
 //
 //  NSString+Extensions.h
-//  Test
+//  RDExtensions
 //
 //  Created by ChengYaojun on 2017/4/6.
 //  Copyright © 2017年 ChengYaojun. All rights reserved.

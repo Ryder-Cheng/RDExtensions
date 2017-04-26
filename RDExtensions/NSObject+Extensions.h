@@ -1,20 +1,21 @@
 //
 //  NSObject+Extensions.h
-//  Test
+//  RDExtensions
 //
 //  Created by ChengYaojun on 2017/4/8.
 //  Copyright © 2017年 ChengYaojun. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSObject (Extensions)
 
+void print(id firstObject, ...) NS_REQUIRES_NIL_TERMINATION;
+
+- (NSString *)classNameForProperty;
+
++ (NSString *)className;
+
 @end
 
-
-@interface NSObject(Log)
-
-void print(id firstObject, ...)NS_REQUIRES_NIL_TERMINATION;
-
-@end

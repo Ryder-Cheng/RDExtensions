@@ -65,7 +65,9 @@ typedef void (^CompletionBlock)(BOOL);
 - (CGPoint (^)(CGPoint))offset;
 - (CGFloat (^)(CGFloat))offsetX;
 - (CGFloat (^)(CGFloat))offsetY;
-
+@property (nonatomic) CGFloat borderSize;
+@property (nonatomic, strong) UIColor *borderColor;
+@property (nonatomic) CGFloat radius;
 @end
 
 @interface UIView (Hierarchy)
@@ -75,6 +77,8 @@ typedef void (^CompletionBlock)(BOOL);
 
 @end
 
+#pragma mark - animation
+#pragma mark -
 @interface UIView (animation)
 
 - (void)spring:(NSTimeInterval)duration

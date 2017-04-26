@@ -202,6 +202,35 @@
     };
 }
 
+
+- (UIColor *)borderColor {
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
+- (void)setBorderColor:(UIColor *)borderColor {
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.masksToBounds = YES;
+}
+
+- (CGFloat)borderSize {
+    return self.layer.borderWidth;
+}
+
+- (void)setBorderSize:(CGFloat)borderSize {
+    self.layer.borderWidth = borderSize;
+    self.layer.masksToBounds = YES;
+}
+
+
+- (CGFloat)radius {
+    return self.layer.cornerRadius;
+}
+
+- (void)setRadius:(CGFloat)radius {
+    self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = YES;
+}
+
 @end
 
 @implementation UIView (Hierarchy)
