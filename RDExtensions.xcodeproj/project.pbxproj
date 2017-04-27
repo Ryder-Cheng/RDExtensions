@@ -12,26 +12,26 @@
 		0D45539C1E85514700F967FA /* UIColor+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D45539A1E85514700F967FA /* UIColor+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D45539D1E85514700F967FA /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45539B1E85514700F967FA /* UIColor+Extensions.m */; };
 		0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D48F7211E840B990051DB13 /* RDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4E61471E8BBDA700785EB9 /* BlockTap.h */; };
+		0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4E61471E8BBDA700785EB9 /* BlockTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D4E614A1E8BBDA700785EB9 /* BlockTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E61481E8BBDA700785EB9 /* BlockTap.m */; };
-		0D810E651EB0955B004B6A25 /* NSObject+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E5F1EB0955B004B6A25 /* NSObject+Extensions.h */; };
+		0D810E651EB0955B004B6A25 /* NSObject+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E5F1EB0955B004B6A25 /* NSObject+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D810E661EB0955B004B6A25 /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D810E601EB0955B004B6A25 /* NSObject+Extensions.m */; };
-		0D810E671EB0955B004B6A25 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E611EB0955B004B6A25 /* NSString+Extensions.h */; };
+		0D810E671EB0955B004B6A25 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E611EB0955B004B6A25 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D810E681EB0955B004B6A25 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D810E621EB0955B004B6A25 /* NSString+Extensions.m */; };
-		0D810E691EB0955B004B6A25 /* UIButton+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E631EB0955B004B6A25 /* UIButton+Extensions.h */; };
+		0D810E691EB0955B004B6A25 /* UIButton+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E631EB0955B004B6A25 /* UIButton+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D810E6A1EB0955B004B6A25 /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D810E641EB0955B004B6A25 /* UIButton+Extensions.m */; };
-		0D810E6D1EB09642004B6A25 /* UIImage+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E6B1EB09642004B6A25 /* UIImage+Extensions.h */; };
+		0D810E6D1EB09642004B6A25 /* UIImage+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E6B1EB09642004B6A25 /* UIImage+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D810E6E1EB09642004B6A25 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D810E6C1EB09642004B6A25 /* UIImage+Extensions.m */; };
-		0D810E711EB096B3004B6A25 /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E6F1EB096B3004B6A25 /* NSNumber+Extensions.h */; };
+		0D810E711EB096B3004B6A25 /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D810E6F1EB096B3004B6A25 /* NSNumber+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D810E721EB096B3004B6A25 /* NSNumber+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D810E701EB096B3004B6A25 /* NSNumber+Extensions.m */; };
 		0DD9D5471E92A362002BB2E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9D5461E92A362002BB2E1 /* Info.plist */; };
-		0DF68AB11E8D50F100367DCE /* BlockLongPress.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AAF1E8D50F100367DCE /* BlockLongPress.h */; };
+		0DF68AB11E8D50F100367DCE /* BlockLongPress.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AAF1E8D50F100367DCE /* BlockLongPress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF68AB21E8D50F100367DCE /* BlockLongPress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68AB01E8D50F100367DCE /* BlockLongPress.m */; };
-		0DF68AB51E8D550900367DCE /* BlockPinch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AB31E8D550900367DCE /* BlockPinch.h */; };
+		0DF68AB51E8D550900367DCE /* BlockPinch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AB31E8D550900367DCE /* BlockPinch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF68AB61E8D550900367DCE /* BlockPinch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68AB41E8D550900367DCE /* BlockPinch.m */; };
-		0DF68AB91E8D571900367DCE /* BlockSwipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AB71E8D571900367DCE /* BlockSwipe.h */; };
+		0DF68AB91E8D571900367DCE /* BlockSwipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68AB71E8D571900367DCE /* BlockSwipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF68ABA1E8D571900367DCE /* BlockSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68AB81E8D571900367DCE /* BlockSwipe.m */; };
-		0DF68ABD1E8D58D100367DCE /* BlockPan.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68ABB1E8D58D100367DCE /* BlockPan.h */; };
+		0DF68ABD1E8D58D100367DCE /* BlockPan.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF68ABB1E8D58D100367DCE /* BlockPan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF68ABE1E8D58D100367DCE /* BlockPan.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68ABC1E8D58D100367DCE /* BlockPan.m */; };
 /* End PBXBuildFile section */
 
@@ -138,11 +138,11 @@
 				0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */,
 				0D810E691EB0955B004B6A25 /* UIButton+Extensions.h in Headers */,
 				0DF68ABD1E8D58D100367DCE /* BlockPan.h in Headers */,
-				0D4553981E85511100F967FA /* UIView+Extensions.h in Headers */,
 				0D810E6D1EB09642004B6A25 /* UIImage+Extensions.h in Headers */,
 				0DF68AB11E8D50F100367DCE /* BlockLongPress.h in Headers */,
 				0DF68AB51E8D550900367DCE /* BlockPinch.h in Headers */,
 				0D810E651EB0955B004B6A25 /* NSObject+Extensions.h in Headers */,
+				0D4553981E85511100F967FA /* UIView+Extensions.h in Headers */,
 				0D45539C1E85514700F967FA /* UIColor+Extensions.h in Headers */,
 				0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */,
 			);
