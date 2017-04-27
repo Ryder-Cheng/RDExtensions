@@ -1,5 +1,5 @@
 //
-//  UIView+Extension.h
+//  UIView+Extensions.h
 //  RDExtensions
 //
 //  Created by ChengYaojun on 2017/3/24.
@@ -40,7 +40,7 @@ typedef void (^CompletionBlock)(BOOL);
 
 @end
 
-@interface UIView (Extension)
+@interface UIView (Extensions)
 
 - (UIImage *)toImage;
 

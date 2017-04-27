@@ -6,10 +6,10 @@
 //  Copyright © 2017年 ChengYaojun. All rights reserved.
 //
 
-#import "UIColor+Extension.h"
+#import "UIColor+Extensions.h"
 
 
-@implementation UIColor (Extension)
+@implementation UIColor (Extensions)
 
 + (UIColor *)colorFromHex:(Hex)hex {
     return [UIColor colorWithRed:(((hex & 0xFF0000) >> 16))/255.0

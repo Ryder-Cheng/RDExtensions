@@ -1,5 +1,5 @@
 //
-//  UIColor+Extension.h
+//  UIColor+Extensions.h
 //  RDExtensions
 //
 //  Created by ChengYaojun on 2017/4/6.
@@ -14,7 +14,7 @@ UIKIT_STATIC_INLINE CGFloat clamp(CGFloat val) {
     return MIN(1, MAX(0, val));
 }
 
-@interface UIColor (Extension)
+@interface UIColor (Extensions)
 + (UIColor *)colorFromHex:(Hex)hex;
 + (UIColor *)HSLToRGB:(CGFloat)h
                     s:(CGFloat)s

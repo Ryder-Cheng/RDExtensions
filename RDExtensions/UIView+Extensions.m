@@ -1,19 +1,19 @@
 //
-//  UIView+Extension.m
+//  UIView+Extensions.m
 //  RDExtensions
 //
 //  Created by ChengYaojun on 2017/3/24.
 //  Copyright © 2017年 ChengYaojun. All rights reserved.
 //
 
-#import "UIView+Extension.h"
+#import "UIView+Extensions.h"
 #import "BlockTap.h"
 #import "BlockLongPress.h"
 #import "BlockPinch.h"
 #import "BlockSwipe.h"
 #import "BlockPan.h"
 
-@implementation UIView (Extension)
+@implementation UIView (Extensions)
 
 - (UIImage *)toImage {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, 0.0);

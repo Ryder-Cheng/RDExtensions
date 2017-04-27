@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D4553981E85511100F967FA /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4553961E85511100F967FA /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D4553991E85511100F967FA /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4553971E85511100F967FA /* UIView+Extension.m */; };
-		0D45539C1E85514700F967FA /* UIColor+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D45539A1E85514700F967FA /* UIColor+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D45539D1E85514700F967FA /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45539B1E85514700F967FA /* UIColor+Extension.m */; };
+		0D4553981E85511100F967FA /* UIView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4553961E85511100F967FA /* UIView+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D4553991E85511100F967FA /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4553971E85511100F967FA /* UIView+Extensions.m */; };
+		0D45539C1E85514700F967FA /* UIColor+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D45539A1E85514700F967FA /* UIColor+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D45539D1E85514700F967FA /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45539B1E85514700F967FA /* UIColor+Extensions.m */; };
 		0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D48F7211E840B990051DB13 /* RDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4E61471E8BBDA700785EB9 /* BlockTap.h */; };
 		0D4E614A1E8BBDA700785EB9 /* BlockTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E61481E8BBDA700785EB9 /* BlockTap.m */; };
@@ -36,10 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D4553961E85511100F967FA /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		0D4553971E85511100F967FA /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		0D45539A1E85514700F967FA /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
-		0D45539B1E85514700F967FA /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		0D4553961E85511100F967FA /* UIView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
+		0D4553971E85511100F967FA /* UIView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
+		0D45539A1E85514700F967FA /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		0D45539B1E85514700F967FA /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
 		0D48F71E1E840B990051DB13 /* RDExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D48F7211E840B990051DB13 /* RDExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDExtensions.h; sourceTree = "<group>"; };
 		0D4E61471E8BBDA700785EB9 /* BlockTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTap.h; sourceTree = "<group>"; };
@@ -106,12 +106,12 @@
 				0DF68AB81E8D571900367DCE /* BlockSwipe.m */,
 				0DF68ABB1E8D58D100367DCE /* BlockPan.h */,
 				0DF68ABC1E8D58D100367DCE /* BlockPan.m */,
-				0D45539A1E85514700F967FA /* UIColor+Extension.h */,
-				0D45539B1E85514700F967FA /* UIColor+Extension.m */,
+				0D45539A1E85514700F967FA /* UIColor+Extensions.h */,
+				0D45539B1E85514700F967FA /* UIColor+Extensions.m */,
 				0D810E6B1EB09642004B6A25 /* UIImage+Extensions.h */,
 				0D810E6C1EB09642004B6A25 /* UIImage+Extensions.m */,
-				0D4553961E85511100F967FA /* UIView+Extension.h */,
-				0D4553971E85511100F967FA /* UIView+Extension.m */,
+				0D4553961E85511100F967FA /* UIView+Extensions.h */,
+				0D4553971E85511100F967FA /* UIView+Extensions.m */,
 				0D810E6F1EB096B3004B6A25 /* NSNumber+Extensions.h */,
 				0D810E701EB096B3004B6A25 /* NSNumber+Extensions.m */,
 				0D810E5F1EB0955B004B6A25 /* NSObject+Extensions.h */,
@@ -138,12 +138,12 @@
 				0D4E61491E8BBDA700785EB9 /* BlockTap.h in Headers */,
 				0D810E691EB0955B004B6A25 /* UIButton+Extensions.h in Headers */,
 				0DF68ABD1E8D58D100367DCE /* BlockPan.h in Headers */,
-				0D4553981E85511100F967FA /* UIView+Extension.h in Headers */,
+				0D4553981E85511100F967FA /* UIView+Extensions.h in Headers */,
 				0D810E6D1EB09642004B6A25 /* UIImage+Extensions.h in Headers */,
 				0DF68AB11E8D50F100367DCE /* BlockLongPress.h in Headers */,
 				0DF68AB51E8D550900367DCE /* BlockPinch.h in Headers */,
 				0D810E651EB0955B004B6A25 /* NSObject+Extensions.h in Headers */,
-				0D45539C1E85514700F967FA /* UIColor+Extension.h in Headers */,
+				0D45539C1E85514700F967FA /* UIColor+Extensions.h in Headers */,
 				0D48F7231E840B990051DB13 /* RDExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,14 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D810E6E1EB09642004B6A25 /* UIImage+Extensions.m in Sources */,
-				0D4553991E85511100F967FA /* UIView+Extension.m in Sources */,
+				0D4553991E85511100F967FA /* UIView+Extensions.m in Sources */,
 				0DF68AB61E8D550900367DCE /* BlockPinch.m in Sources */,
 				0DF68ABE1E8D58D100367DCE /* BlockPan.m in Sources */,
 				0D810E681EB0955B004B6A25 /* NSString+Extensions.m in Sources */,
 				0D810E661EB0955B004B6A25 /* NSObject+Extensions.m in Sources */,
 				0D810E6A1EB0955B004B6A25 /* UIButton+Extensions.m in Sources */,
 				0DF68ABA1E8D571900367DCE /* BlockSwipe.m in Sources */,
-				0D45539D1E85514700F967FA /* UIColor+Extension.m in Sources */,
+				0D45539D1E85514700F967FA /* UIColor+Extensions.m in Sources */,
 				0D810E721EB096B3004B6A25 /* NSNumber+Extensions.m in Sources */,
 				0D4E614A1E8BBDA700785EB9 /* BlockTap.m in Sources */,
 				0DF68AB21E8D50F100367DCE /* BlockLongPress.m in Sources */,
