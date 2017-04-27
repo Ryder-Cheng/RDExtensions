@@ -22,3 +22,4 @@ FOUNDATION_EXPORT const unsigned char RDExtensionsVersionString[];
 #import <RDExtensions/NSObject+Extensions.h>
 #import <RDExtensions/NSString+Extensions.h>
 #import <RDExtensions/UIButton+Extensions.h>
+#import <RDExtensions/UILabel+Extensions.h>
