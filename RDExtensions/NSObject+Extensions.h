@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 
 #define print(args,...) println(args,##__VA_ARGS__,nil)
+#define __Method__ NSStringFromSelector(_cmd)
+#define __Class__ NSStringFromClass(self.class)
 
 @interface NSObject (Extensions)
 
