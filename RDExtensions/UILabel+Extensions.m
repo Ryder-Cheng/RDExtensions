@@ -1,6 +1,6 @@
 //
 //  UILabel+Extensions.m
-//  RuntimeDemo
+//  RDExtensions
 //
 //  Created by ryder on 2017/4/27.
 //  Copyright © 2017年 Ryder. All rights reserved.

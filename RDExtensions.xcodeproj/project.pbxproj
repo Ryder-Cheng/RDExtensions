@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2256BA1EB2E47A004C7B30 /* NSDate+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D2256B81EB2E47A004C7B30 /* NSDate+Extensions.h */; };
+		0D2256BB1EB2E47A004C7B30 /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2256B91EB2E47A004C7B30 /* NSDate+Extensions.m */; };
 		0D4553981E85511100F967FA /* UIView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4553961E85511100F967FA /* UIView+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D4553991E85511100F967FA /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4553971E85511100F967FA /* UIView+Extensions.m */; };
 		0D45539C1E85514700F967FA /* UIColor+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D45539A1E85514700F967FA /* UIColor+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D2256B81EB2E47A004C7B30 /* NSDate+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extensions.h"; sourceTree = "<group>"; };
+		0D2256B91EB2E47A004C7B30 /* NSDate+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extensions.m"; sourceTree = "<group>"; };
 		0D4553961E85511100F967FA /* UIView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
 		0D4553971E85511100F967FA /* UIView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
 		0D45539A1E85514700F967FA /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				0D810E641EB0955B004B6A25 /* UIButton+Extensions.m */,
 				0D810EA41EB1ECDA004B6A25 /* UILabel+Extensions.h */,
 				0D810EA51EB1ECDA004B6A25 /* UILabel+Extensions.m */,
+				0D2256B81EB2E47A004C7B30 /* NSDate+Extensions.h */,
+				0D2256B91EB2E47A004C7B30 /* NSDate+Extensions.m */,
 				0D48F7211E840B990051DB13 /* RDExtensions.h */,
 			);
 			path = RDExtensions;
@@ -147,6 +153,7 @@
 				0DF68ABD1E8D58D100367DCE /* BlockPan.h in Headers */,
 				0D810E6D1EB09642004B6A25 /* UIImage+Extensions.h in Headers */,
 				0DF68AB11E8D50F100367DCE /* BlockLongPress.h in Headers */,
+				0D2256BA1EB2E47A004C7B30 /* NSDate+Extensions.h in Headers */,
 				0DF68AB51E8D550900367DCE /* BlockPinch.h in Headers */,
 				0D810E651EB0955B004B6A25 /* NSObject+Extensions.h in Headers */,
 				0D4553981E85511100F967FA /* UIView+Extensions.h in Headers */,
@@ -230,6 +237,7 @@
 				0DF68ABE1E8D58D100367DCE /* BlockPan.m in Sources */,
 				0D810E681EB0955B004B6A25 /* NSString+Extensions.m in Sources */,
 				0D810E661EB0955B004B6A25 /* NSObject+Extensions.m in Sources */,
+				0D2256BB1EB2E47A004C7B30 /* NSDate+Extensions.m in Sources */,
 				0D810E6A1EB0955B004B6A25 /* UIButton+Extensions.m in Sources */,
 				0DF68ABA1E8D571900367DCE /* BlockSwipe.m in Sources */,
 				0D45539D1E85514700F967FA /* UIColor+Extensions.m in Sources */,
