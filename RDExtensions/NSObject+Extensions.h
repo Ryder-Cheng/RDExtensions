@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define print(args,...) println(args,##__VA_ARGS__,nil)
+
 @interface NSObject (Extensions)
 
-void print(id firstObject, ...) NS_REQUIRES_NIL_TERMINATION;
+void println(id firstObject, ...) NS_REQUIRES_NIL_TERMINATION;
 
 - (NSString *)classNameForProperty;
 

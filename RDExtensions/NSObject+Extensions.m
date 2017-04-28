@@ -10,7 +10,7 @@
 
 @implementation NSObject (Extensions)
 
-void print(id firstObject, ...) {
+void println(id firstObject, ...) {
     va_list args;
     va_start(args, firstObject);
     NSMutableArray *array = [NSMutableArray array];
